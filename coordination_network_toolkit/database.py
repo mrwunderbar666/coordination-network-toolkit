@@ -29,7 +29,7 @@ def initialise_db(db_path: str):
 
         create table if not exists edge (
             message_id primary key,
-            user_id not null,
+            user_id integer not null,
             username text,
             repost_id,
             reply_id,
